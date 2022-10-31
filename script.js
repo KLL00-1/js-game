@@ -10,6 +10,7 @@ btn.addEventListener("click", () => {
   if (dog.classLists != "jump") {
     dog.classList.add("jump");
     h2.innerHTML++;
+    fast();
   }
 
   setTimeout(() => {
@@ -28,8 +29,8 @@ let isAlive = setInterval(() => {
   if (dogBottom == 0 && bollRight <= 100) {
     h1.classList.add("h1");
     boll.classList.add("none");
-
     btn.disabled = true;
+    boll.classList.remove("fast");
   }
 }, 10);
 btn1.addEventListener("click", () => {
@@ -39,6 +40,11 @@ btn1.addEventListener("click", () => {
   btn.disabled = false;
   h2.innerHTML = 0;
 });
+function fast() {
+  if (h2.innerHTML >= 30) {
+    boll.classList.add("fast");
+  }
+}
 function disabled() {
   if (boll.classLists != "start") {
     btn.disabled = true;
