@@ -2,6 +2,7 @@ const dog = document.getElementById("dog");
 const boll = document.getElementById("boll");
 const btn = document.getElementById("btn");
 const btn1 = document.getElementById("btn1");
+const h1 = document.getElementById("h1");
 
 btn.addEventListener("click", () => {
   if (dog.classLists != "jump") {
@@ -21,11 +22,12 @@ let isAlive = setInterval(() => {
   );
 
   if (dogBottom == 0 && bollRight <= 100) {
-    alert("game over");
+    h1.classList.add("h1");
     boll.classList.add("none");
   }
 }, 10);
 btn1.addEventListener("click", () => {
   boll.classList.remove("none");
   boll.classList.add("start");
+  h1.classList.remove("h1");
 });
