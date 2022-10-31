@@ -40,11 +40,7 @@ btn1.addEventListener("click", () => {
   btn.disabled = false;
   h2.innerHTML = 0;
 });
-function fast() {
-  if (h2.innerHTML >= 30) {
-    boll.classList.add("fast");
-  }
-}
+
 function disabled() {
   if (boll.classLists != "start") {
     btn.disabled = true;
