@@ -29,7 +29,7 @@ let isAlive = setInterval(() => {
     window.getComputedStyle(boll).getPropertyValue("right")
   );
 
-  if (dogBottom == 0 && bollRight <= 100) {
+  if (dogBottom <= 5 && bollRight <= 95) {
     h1.classList.add("h1");
     boll.classList.add("none");
     btn.disabled = true;
