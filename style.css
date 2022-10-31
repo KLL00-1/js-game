@@ -6,6 +6,9 @@
 body {
   background-color: brown;
 }
+h1 {
+  color: bisque;
+}
 .game {
   width: 800px;
   height: 400px;
@@ -17,6 +20,8 @@ body {
   border-radius: 20px;
   background-color: bisque;
   border-bottom: 30px solid green;
+  text-align: center;
+  padding-top: 50px;
 }
 
 .type {
@@ -96,4 +101,7 @@ body {
 }
 .none {
   animation: none;
+}
+.h1 {
+  color: black;
 }
