@@ -93,11 +93,22 @@ h1 {
   0% {
     bottom: 0;
   }
+  10% {
+    bottom: -5%;
+  }
+  25% {
+    transform: rotate(20deg);
+  }
   50% {
     bottom: 30%;
+    transform: rotate(10deg);
+  }
+  75% {
+    transform: rotate(-10deg);
   }
   100% {
     bottom: 0;
+    transform: rotate(-20deg);
   }
 }
 .none {
