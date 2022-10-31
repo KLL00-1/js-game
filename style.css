@@ -53,7 +53,6 @@ h1 {
   animation: right 1.2s linear infinite;
 }
 
-}
 @keyframes right {
   0% {
     right: 95%;
@@ -110,4 +109,21 @@ h1 {
 #h2 {
   float: right;
   margin: 20px;
+}
+.h2_1,
+.h2_2 {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 50%;
+  color: bisque;
+}
+.h2_2 {
+  top: 40%;
+}
+.h3 {
+  color: blue;
+}
+.h4 {
+  color: brown;
 }
