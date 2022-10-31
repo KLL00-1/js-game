@@ -28,7 +28,7 @@ let isAlive = setInterval(() => {
   if (dogBottom == 0 && bollRight <= 100) {
     h1.classList.add("h1");
     boll.classList.add("none");
-    h2.innerHTML = 0;
+
     btn.disabled = true;
   }
 }, 10);
@@ -37,6 +37,7 @@ btn1.addEventListener("click", () => {
   boll.classList.add("start");
   h1.classList.remove("h1");
   btn.disabled = false;
+  h2.innerHTML = 0;
 });
 function disabled() {
   if (boll.classLists != "start") {
