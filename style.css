@@ -52,8 +52,7 @@ h1 {
 .start {
   animation: right 1.2s linear infinite;
 }
-.fast {
-  animation: right 1.1s linear infinite;
+
 }
 @keyframes right {
   0% {
