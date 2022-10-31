@@ -4,13 +4,16 @@ const btn = document.getElementById("btn");
 const btn1 = document.getElementById("btn1");
 const h1 = document.getElementById("h1");
 const h2 = document.getElementById("h2");
+const h2_1 = document.getElementById("h2_1");
+const h2_2 = document.getElementById("h2_2");
 h2.innerHTML = Number(h2.innerHTML);
 
 btn.addEventListener("click", () => {
   if (dog.classLists != "jump") {
     dog.classList.add("jump");
     h2.innerHTML++;
-    
+    cool();
+    monster();
   }
 
   setTimeout(() => {
@@ -40,7 +43,16 @@ btn1.addEventListener("click", () => {
   btn.disabled = false;
   h2.innerHTML = 0;
 });
-
+function cool() {
+  if (h2.innerHTML == 15) {
+    h2_1.classList.add("h3");
+  } else if (h2.innerHTML >= 17) h2_1.classList.remove("h3");
+}
+function monster() {
+  if (h2.innerHTML == 30) {
+    h2_2.classList.add("h4");
+  } else if (h2.innerHTML >= 32) h2_2.classList.remove("h4");
+}
 function disabled() {
   if (boll.classLists != "start") {
     btn.disabled = true;
