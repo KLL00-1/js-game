@@ -1,13 +1,14 @@
 .game {
   width: 800px;
   height: 400px;
-  border-bottom: 1px solid black;
+  max-width: 100%;
+  max-height: 100%;
   margin: auto;
-  background-color: bisque;
   position: relative;
   border: 2px solid black;
   border-radius: 20px;
 }
+
 .type {
   margin: 30px auto;
   text-align: center;
@@ -31,14 +32,14 @@
   border: 1px solid black;
   position: absolute;
   bottom: 1%;
-  right: 100%;
+  right: 95%;
 }
 .start {
   animation: right 1.7s linear infinite;
 }
 @keyframes right {
   0% {
-    right: 100%;
+    right: 95%;
   }
   10% {
     bottom: 4%;
@@ -70,7 +71,7 @@
   right: 0;
 }
 .jump {
-  animation: up 0.8s linear;
+  animation: up 1s linear;
 }
 @keyframes up {
   0% {
