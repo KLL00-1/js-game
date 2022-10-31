@@ -10,7 +10,7 @@ btn.addEventListener("click", () => {
   if (dog.classLists != "jump") {
     dog.classList.add("jump");
     h2.innerHTML++;
-    fast();
+    
   }
 
   setTimeout(() => {
