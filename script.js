@@ -9,7 +9,7 @@ btn.addEventListener("click", () => {
   }
   setTimeout(() => {
     dog.classList.remove("jump");
-  }, 800);
+  }, 1000);
 });
 
 let isAlive = setInterval(() => {
