@@ -7,6 +7,7 @@ const h2 = document.getElementById("h2");
 const h2_1 = document.getElementById("h2_1");
 const h2_2 = document.getElementById("h2_2");
 const shadow = document.getElementById("shadow");
+var audio = new Audio("audio/Sound_19341.mp3");
 h2.innerHTML = Number(h2.innerHTML);
 
 btn.addEventListener("click", () => {
@@ -36,6 +37,7 @@ let isAlive = setInterval(() => {
     h1.classList.add("h1");
     boll.classList.add("none");
     btn.disabled = true;
+    audio.load();
   }
 }, 10);
 btn1.addEventListener("click", () => {
@@ -44,6 +46,7 @@ btn1.addEventListener("click", () => {
   h1.classList.remove("h1");
   btn.disabled = false;
   h2.innerHTML = 0;
+  audio.play();
 });
 function cool() {
   if (h2.innerHTML == 15) {
