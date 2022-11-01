@@ -145,30 +145,30 @@ h1 {
 }
 .shadow {
   position: absolute;
-  width: 100px;
+  width: 90px;
   height: 10px;
   background-color: black;
   right: 1%;
   bottom: 1%;
   z-index: 2;
-  border-radius: 10px;
+  border-radius: 50%;
   opacity: 60%;
-  box-shadow: 0 0 10px black;
+  box-shadow: 2px 2px 1px black;
 }
 .shadow_black {
   animation: shadow 1s linear;
 }
 @keyframes shadow {
   0% {
-    box-shadow: 3 0 10px black;
+    box-shadow: 2px 2px 1px black;
     opacity: 60%;
   }
   50% {
-    box-shadow: 0 0 20px black;
+    box-shadow: 0 0 10px black;
     opacity: 15%;
   }
   100% {
-    box-shadow: 0 0 10px black;
+    box-shadow: 2px 2px 1px black;
     opacity: 60%;
   }
 }
