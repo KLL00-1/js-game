@@ -8,6 +8,7 @@ const h2_1 = document.getElementById("h2_1");
 const h2_2 = document.getElementById("h2_2");
 const shadow = document.getElementById("shadow");
 var audio = new Audio("audio/Sound_19341.mp3");
+const audioGameOver = new Audio("audio/Game_over.mp3");
 h2.innerHTML = Number(h2.innerHTML);
 
 btn.addEventListener("click", () => {
@@ -38,6 +39,7 @@ let isAlive = setInterval(() => {
     boll.classList.add("none");
     btn.disabled = true;
     audio.load();
+    audioGameOver.play();
   }
 }, 10);
 btn1.addEventListener("click", () => {
@@ -63,4 +65,5 @@ function disabled() {
     btn.disabled = true;
   }
 }
+
 disabled();
