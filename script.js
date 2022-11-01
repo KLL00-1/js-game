@@ -6,17 +6,20 @@ const h1 = document.getElementById("h1");
 const h2 = document.getElementById("h2");
 const h2_1 = document.getElementById("h2_1");
 const h2_2 = document.getElementById("h2_2");
+const shadow = document.getElementById("shadow");
 h2.innerHTML = Number(h2.innerHTML);
 
 btn.addEventListener("click", () => {
   if (dog.classLists != "jump") {
     dog.classList.add("jump");
+    shadow.classList.add("shadow_black");
     h2.innerHTML++;
     cool();
     monster();
   }
 
   setTimeout(() => {
+    shadow.classList.remove("shadow_black");
     dog.classList.remove("jump");
   }, 1000);
 });
@@ -33,7 +36,6 @@ let isAlive = setInterval(() => {
     h1.classList.add("h1");
     boll.classList.add("none");
     btn.disabled = true;
-    boll.classList.remove("fast");
   }
 }, 10);
 btn1.addEventListener("click", () => {
