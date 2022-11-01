@@ -49,6 +49,7 @@ btn1.addEventListener("click", () => {
   btn.disabled = false;
   h2.innerHTML = 0;
   audio.play();
+  audio.loop = true;
 });
 function cool() {
   if (h2.innerHTML == 15) {
@@ -65,5 +66,4 @@ function disabled() {
     btn.disabled = true;
   }
 }
-
 disabled();
