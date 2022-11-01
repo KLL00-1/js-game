@@ -1,7 +1,11 @@
-@media (max-width: 420px) {
+@media (max-width: 430px) {
   .boll {
     width: 30px;
     height: 30px;
     right: 92%;
+  }
+  h1 {
+    right: 10%;
+    left: auto;
   }
 }
