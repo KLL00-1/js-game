@@ -52,7 +52,7 @@ h1 {
   position: absolute;
   bottom: 1%;
   right: 95%;
-  box-shadow: 1px 6px 5px black;
+  box-shadow: 1px 6px 3px black;
 }
 .start {
   animation: right 1.2s linear infinite;
@@ -61,6 +61,7 @@ h1 {
 @keyframes right {
   0% {
     right: 95%;
+    box-shadow: 1px 6px 3px black;
   }
   10% {
     bottom: 4%;
@@ -79,6 +80,7 @@ h1 {
   }
   100% {
     right: 0;
+    box-shadow: 5px 8px 3px black;
   }
 }
 .dog img {
