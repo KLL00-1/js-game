@@ -8,4 +8,8 @@
     right: 10%;
     left: auto;
   }
+  #btn {
+    padding: 40px;
+    font-size: 24px;
+  }
 }
