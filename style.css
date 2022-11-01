@@ -149,24 +149,24 @@ h1 {
   bottom: 1%;
   z-index: 2;
   border-radius: 10px;
-  opacity: 40%;
-  box-shadow: 3px -3px 5px black;
+  opacity: 60%;
+  box-shadow: 0 0 10px black;
 }
 .shadow_black {
   animation: shadow 1s linear;
 }
 @keyframes shadow {
   0% {
-    box-shadow: 3px -3px 5px black;
-    opacity: 40%;
+    box-shadow: 3 0 10px black;
+    opacity: 60%;
   }
   50% {
-    box-shadow: 10px -7px 10px black;
+    box-shadow: 0 0 20px black;
     opacity: 15%;
   }
   100% {
-    box-shadow: 3px -3px 5px black;
-    opacity: 40%;
+    box-shadow: 0 0 10px black;
+    opacity: 60%;
   }
 }
 .san {
